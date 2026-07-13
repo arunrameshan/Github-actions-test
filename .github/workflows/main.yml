@@ -25,12 +25,16 @@ jobs:
           pwd
           ls -l
 
-      - name: "Install Packer"
-        run: |
-          wget https://releases.hashicorp.com/packer/1.15.1/packer_1.15.1_linux_amd64.zip
-          unzip packer_1.15.1_linux_amd64.zip
+#      - name: "Install Packer"
+#        run: |
+#          wget https://releases.hashicorp.com/packer/1.15.1/packer_1.15.1_linux_amd64.zip
+#          unzip packer_1.15.1_linux_amd64.zip
           
       - name: "Current Working Directory And its Contents After installing Packer"
         run: |
           pwd
           ls -l
+
+      - name: "check disk space"
+        run: df -hT
+
