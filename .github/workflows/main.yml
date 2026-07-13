@@ -38,3 +38,6 @@ jobs:
       - name: "check disk space"
         run: df -hT
 
+      - name: "check free memory"
+        run: free -m
+
